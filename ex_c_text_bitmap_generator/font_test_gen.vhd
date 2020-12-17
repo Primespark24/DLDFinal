@@ -25,14 +25,14 @@ architecture arch of font_test_gen is
 begin
 
   -- compute the address in rom for character number char_num
-  row_addr <= pixel_y(5 downto 2);
+  row_addr <= pixel_y(5 downto 2);  --cahnged by us students to make bigger
   rom_addr <= char_num & row_addr;
 
   -- lookup the 8 bit font_word from the font rom
   font_unit : entity work.font_rom
     port map(clk => clk, addr => rom_addr, data => font_word);
 
-  bit_addr <= not ( pixel_x(4 downto 2) );
+  bit_addr <= not ( pixel_x(4 downto 2) );  --cahnged by us students to make bigger
   font_bit <= font_word(to_integer(unsigned(bit_addr)));
 
   -- rgb multiplexing circuit
@@ -42,9 +42,9 @@ begin
       rgb_text <= "010"; --blank
     else
       if font_bit = '1' then
-        rgb_text <= "100"; -- green
+        rgb_text <= "100"; -- red
       else
-        rgb_text <= "111"; -- black
+        rgb_text <= "010"; -- green
       end if;
     end if;
   end process;

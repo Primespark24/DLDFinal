@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/School/DLD/vga2/ic_27_vga_display_applications/ex_c_text_bitmap_generator/font_generator/font_test_top.runs/synth_1/font_test_top.tcl"
+  variable script "C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/font_generator/font_test_top.runs/synth_1/font_test_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -76,18 +76,20 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/School/DLD/vga2/ic_27_vga_display_applications/ex_c_text_bitmap_generator/font_generator/font_test_top.cache/wt [current_project]
-set_property parent.project_path D:/School/DLD/vga2/ic_27_vga_display_applications/ex_c_text_bitmap_generator/font_generator/font_test_top.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/font_generator/font_test_top.cache/wt [current_project]
+set_property parent.project_path C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/font_generator/font_test_top.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_output_repo c:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/font_generator/font_test_top.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  D:/School/DLD/vga2/ic_27_vga_display_applications/ex_c_text_bitmap_generator/font_rom.vhd
-  D:/School/DLD/vga2/ic_27_vga_display_applications/ex_c_text_bitmap_generator/font_test_gen.vhd
-  D:/School/DLD/vga2/ic_27_vga_display_applications/ex_c_text_bitmap_generator/vga_sync.vhd
-  D:/School/DLD/vga2/ic_27_vga_display_applications/ex_c_text_bitmap_generator/font_test_top.vhd
+  C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/font_rom.vhd
+  C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/font_test_gen.vhd
+  C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/vga_sync.vhd
+  C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/synchro.vhd
+  C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/font_test_top.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -98,8 +100,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/School/DLD/vga2/ic_27_vga_display_applications/ex_c_text_bitmap_generator/Basys3_Master.xdc
-set_property used_in_implementation false [get_files D:/School/DLD/vga2/ic_27_vga_display_applications/ex_c_text_bitmap_generator/Basys3_Master.xdc]
+read_xdc C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/Basys3_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/Basys3_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

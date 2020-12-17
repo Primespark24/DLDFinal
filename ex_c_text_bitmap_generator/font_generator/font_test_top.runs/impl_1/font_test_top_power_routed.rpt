@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Sat Dec 12 13:02:16 2020
+| Date             : Thu Dec 17 12:48:45 2020
 | Host             : LAPTOP-4B313PUQ running 64-bit major release  (build 9200)
 | Command          : report_power -file font_test_top_power_routed.rpt -pb font_test_top_power_summary_routed.pb -rpx font_test_top_power_routed.rpx
 | Design           : font_test_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.089        |
+| Total On-Chip Power (W)  | 0.088        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.017        |
+| Dynamic (W)              | 0.016        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       82 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       31 |     20800 |            0.15 |
-|   Register     |    <0.001 |       36 |     41600 |            0.09 |
-|   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |    <0.001 |       80 |       --- |             --- |
+| Slice Logic    |    <0.001 |       90 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       33 |     20800 |            0.16 |
+|   Register     |    <0.001 |       37 |     41600 |            0.09 |
+|   Others       |     0.000 |        9 |       --- |             --- |
+| Signals        |    <0.001 |       84 |       --- |             --- |
 | Block RAM      |    <0.001 |      0.5 |        50 |            1.00 |
-| I/O            |     0.016 |       60 |       106 |           56.60 |
+| I/O            |     0.015 |       61 |       106 |           57.55 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.089 |          |           |                 |
+| Total          |     0.088 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -140,7 +140,7 @@ Table of Contents
 +---------------+-----------+
 | Name          | Power (W) |
 +---------------+-----------+
-| font_test_top |     0.017 |
+| font_test_top |     0.016 |
 +---------------+-----------+
 
 

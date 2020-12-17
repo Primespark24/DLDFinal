@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/School/DLD/vga2/ic_27_vga_display_applications/ex_c_text_bitmap_generator/font_generator/font_test_top.runs/impl_1'
+HD_PWD='C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/font_generator/font_test_top.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

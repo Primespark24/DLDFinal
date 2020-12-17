@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="D:/School/DLD/vga2/ic_27_vga_display_applications/ex_c_text_bitmap_generator/font_generator/font_test_top.xpr">
+<Project Version="7" Minor="49" Path="C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/font_generator/font_test_top.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="235893834a8245ec9c4ee1a321aeb66a"/>
+    <Option Name="Id" Val="d6825132a26a412fb87c27e643cc43c0"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -79,6 +79,12 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../vga_sync.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../synchro.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>

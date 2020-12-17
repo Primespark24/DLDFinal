@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1607806814">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1608238032">
   <File Type="PA-TCL" Name="font_test_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="font_test_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="font_test_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="font_test_top.vds"/>
   <File Type="RDS-UTIL" Name="font_test_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="font_test_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="font_test_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="font_test_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="font_test_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../font_rom.vhd">
@@ -21,6 +24,12 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../vga_sync.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../synchro.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
