@@ -80,7 +80,6 @@ set_property webtalk.parent_dir C:/Users/green/Desktop/dld_final/final_project_c
 set_property parent.project_path C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/font_generator/font_test_top.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/font_generator/font_test_top.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }

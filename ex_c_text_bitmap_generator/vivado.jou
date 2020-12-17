@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Thu Dec 17 12:42:25 2020
-# Process ID: 13056
+# Start of session at: Thu Dec 17 14:04:04 2020
+# Process ID: 5152
 # Current directory: C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator
 # Command line: Vivado.exe -mode batch -source ./setup_project.tcl
 # Log file: C:/Users/green/Desktop/dld_final/final_project_chicago/ex_c_text_bitmap_generator/vivado.log

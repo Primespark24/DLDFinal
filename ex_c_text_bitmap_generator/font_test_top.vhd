@@ -37,18 +37,21 @@ architecture font_test_top of font_test_top is
   signal video_on, pixel_tick : std_logic;
   signal rgb_reg, rgb_text    : std_logic_vector(2 downto 0);
   signal imageHolder : std_logic_vector(6 downto 0):= "0000000"; --made a register that hold the Rom address for the outputted image15 downto 0); -- 16 leds above switches
-    -- declares the different states of our fsm
+   --gives a register for our LED signals
+  signal y  : std_logic_vector(1 downto 0);
+  -- declares the different states of our fsm
     type statetype is (S0, S1);
     signal state, nextstate : statetype;
-    signal counter : integer range 0 to 3;
+    signal counter : integer range 0 to 3; --gives a counter to send to the 
     signal a : std_logic;
+
 begin
   -- wire up the clk, reset and LEDs
   -- the switches could be used to modify
   -- the rgb signal
   clk   <= CLK100MHZ; -- system clock
   reset <= btnC; -- reset signal for vga driver
-  LED   <= sw; -- drive LED's from switches
+  LED(1 downto 0)   <= y; -- drive LED's from switches
   
 
   -- instantiate VGA sync circuit
@@ -109,7 +112,7 @@ begin
   end process;
 
 
-  process (clk, reset) begin  --kent jones's patternmoors.vhd
+  process (clk, reset) begin  --kent jones's patternmoor.vhd
     if reset = '1' then
       state <= S0;
     elsif rising_edge(clk) then
@@ -120,7 +123,8 @@ begin
   counter <= counter + 1 when state = S0 and nextstate = S1 else counter;
   imageHolder(1 downto 0) <= std_logic_vector(to_unsigned(counter, 2));
 
-
+  y(0) <= '1' when counter = 1 else '0';
+  y(1) <= '1' when counter = 2 else '0';
     -- Turn off the 7-segment LEDs
     an  <= "1111"; -- wires supplying power to 4 7-seg displays
     seg <= "1111111"; -- wires connecting each of 7 * 4 segments to ground
