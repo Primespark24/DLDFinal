@@ -10,7 +10,7 @@ The hardware we are using for this project is the Basys 3 board, for use with th
 There weren't really any assumptions that we had to make for this project, other than assuming that the user has a basys 3 board and knows how to push a button.
 
 ## Hardware diagram
-![Hardware Diagram](/Users/niklasroberts/Downloads/readme.md)
+![Hardware Diagram](./Hardware_Design.PNG)
 
 ## Works Cited
 We used Kent's ic_25 and ic_27 as guidelines for this project. We got all of our information on how to program the VGA board and display characters to the screen from ic_27 and all of our information on the finite state machine from ic_25, as well as help from Kent himself. 
