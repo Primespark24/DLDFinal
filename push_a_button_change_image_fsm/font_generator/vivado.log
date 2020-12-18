@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Dec 18 07:59:03 2020
+# Process ID: 2496
+# Current directory: C:/Users/green/Desktop/dld_final/final_project_chicago/push_a_button_change_image_fsm/font_generator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27000 C:\Users\green\Desktop\dld_final\final_project_chicago\push_a_button_change_image_fsm\font_generator\font_test_top.xpr
+# Log file: C:/Users/green/Desktop/dld_final/final_project_chicago/push_a_button_change_image_fsm/font_generator/vivado.log
+# Journal file: C:/Users/green/Desktop/dld_final/final_project_chicago/push_a_button_change_image_fsm/font_generator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/green/Desktop/dld_final/final_project_chicago/push_a_button_change_image_fsm/font_generator/font_test_top.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/green/Desktop/dld_final/final_project_chicago/push_a_button_change_image_fsm/font_generator'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/green/Desktop/dld_final/final_project_chicago/push_a_button_change_image_fsm/font_generator/font_test_top.srcs/sources_1'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Computer_Things/Vivado/2020.1/data/ip'.
